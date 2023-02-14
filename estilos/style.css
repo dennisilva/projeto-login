@@ -15,7 +15,7 @@
 
 :root {
     --verde: #49a09d;
-    --roxo: #5f2c82
+    --roxo: #5f2c82;
 }
 
 body, html {
@@ -44,17 +44,20 @@ main {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.442);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     background: var(--roxo) url(../imagens/pexels.jpg
     ) no-repeat center/cover;
-    height: 200px;
+    height: 50%;
     display: block;
 
 }
 
-#login > #formulario {
+section#login > div#formulario {
+    display: block;
     padding: 10px;
-    
 }
